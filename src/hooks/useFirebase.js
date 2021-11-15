@@ -105,7 +105,7 @@ const useFirebase = () => {
 
     //verify admin
     useEffect(() => {
-        fetch(`https://glacial-island-62102.herokuapp.com/users/${user.email}`)
+        fetch(` https://rocky-lowlands-35918.herokuapp.com/users/${user.email}`)
         .then(res => res.json())
         .then(data => setAdmin(data.admin))
     },[user.email])
@@ -123,7 +123,7 @@ const useFirebase = () => {
     //registration success module-73#1
     const saveUser = (email, displayName, method) => {
         const user = { email, displayName };
-        fetch('https://glacial-island-62102.herokuapp.com/users ', {
+        fetch(' https://rocky-lowlands-35918.herokuapp.com/users ', {
             method: method,
             // method: 'POST',
             headers: {
